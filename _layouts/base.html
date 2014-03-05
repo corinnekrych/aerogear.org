@@ -18,6 +18,17 @@
     <script src="/js/libs/highlight.min.js"></script>
     <script type="text/javascript">
         hljs.initHighlightingOnLoad();
+
+        // Function to switch coloring in SVG files
+        function customColoringForSVG(elt, color) {
+            var element = document.getElementById(elt);
+            //it's important to add an load event listener to the object, as it will load the svg doc asynchronously
+            element.addEventListener("load",function(){
+                var svgDoc = element.contentDocument; //get the inner DOM svg
+                var b = svgDoc.getElementsByTagName('style');
+                b[0].innerHTML = ".drawing {stroke:" + color + ";} .filling {fill:" + color +"}";
+            },false);
+        }
     </script>
 
     <script src="/js/libs/jquery-1.10.2.min.js"></script>
@@ -38,6 +49,8 @@
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
+
+
 </head>
 <body>
 <div id="sideNav" class="hidden">

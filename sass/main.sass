@@ -332,17 +332,6 @@ a.news
   &:hover
     text-decoration: underline
 
-.drawing
-  fill: #a74b9e
-  fill-opacity: 1
-  stroke: blue
-  stroke-width: 1.99999976
-  stroke-linecap: round
-  stroke-linejoin: miter
-  stroke-miterlimit: 4
-  stroke-opacity: 1
-  stroke-dasharray: none
-  display: inline
 
 /* =================== Core, Push, Security section =====================================================================
  */
@@ -358,12 +347,6 @@ div.section
   &.core .sect1 h2
     @include respond-to(desktop)
       background: url('/img/ag-core.png') no-repeat left
-      margin: -40px
-      padding: 40px
-    color: $section-text-color
-  &.core.get-it .sect1 h2
-    @include respond-to(desktop)
-      background: url('/img/ag-push.png') no-repeat left
       margin: -40px
       padding: 40px
     color: $section-text-color
@@ -394,6 +377,16 @@ div.section
   .hljs
     background-color: $code
 
+  /* section GET IT*/
+  &.core .sect2 object
+    display: none
+    @include respond-to(desktop)
+      display: inline-block
+      margin: -40px
+    color: $section-text-color
+  &.core .sect2 h2
+    color: $section-text-color
+    margin-top: -2px
 
 @include color-with(core)
 

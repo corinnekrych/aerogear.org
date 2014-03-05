@@ -224,24 +224,13 @@ a.news {
   a.news:hover {
     text-decoration: underline; }
 
-.drawing {
-  fill: #a74b9e;
-  fill-opacity: 1;
-  stroke: blue;
-  stroke-width: 2.0;
-  stroke-linecap: round;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 4;
-  stroke-opacity: 1;
-  stroke-dasharray: none;
-  display: inline; }
-
 /* =================== Core, Push, Security section =====================================================================
  */
 div.section {
   color: #ebebeb;
   background-color: #323232;
-  border-top: #121212 solid 16px; }
+  border-top: #121212 solid 16px;
+  /* section GET IT */ }
   div.section.stick-to-menu {
     border-top: 0px; }
   div.section i {
@@ -251,13 +240,6 @@ div.section {
     @media only screen and (min-width: 848px) {
       div.section.core .sect1 h2 {
         background: url("/img/ag-core.png") no-repeat left;
-        margin: -40px;
-        padding: 40px; } }
-  div.section.core.get-it .sect1 h2 {
-    color: #ebebeb; }
-    @media only screen and (min-width: 848px) {
-      div.section.core.get-it .sect1 h2 {
-        background: url("/img/ag-push.png") no-repeat left;
         margin: -40px;
         padding: 40px; } }
   div.section.push .sect1 h2 {
@@ -289,6 +271,16 @@ div.section {
     border: none; }
   div.section .hljs {
     background-color: #222222; }
+  div.section.core .sect2 object {
+    display: none;
+    color: #ebebeb; }
+    @media only screen and (min-width: 848px) {
+      div.section.core .sect2 object {
+        display: inline-block;
+        margin: -40px; } }
+  div.section.core .sect2 h2 {
+    color: #ebebeb;
+    margin-top: -2px; }
 
 div.core a {
   color: #e17408;
