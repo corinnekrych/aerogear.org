@@ -16,8 +16,8 @@
    inkscape:version="0.48.2 r9819"
    sodipodi:docname="ag-sync.svg">
 <style>
-  .drawing {stroke: #E17408;}
-    .drawing {color:#E17408; stroke: #E17408;}
+.drawing {stroke: #E17408;}
+.drawing {color:#E17408; stroke: #E17408;}
 </style>
 <style>
 .drawing {fill:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none }

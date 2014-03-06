@@ -189,6 +189,28 @@ $code: #222
       .section-strip
         border-top-color: $security-color
 
+@mixin color-svg-with($feature)
+  @if $feature == push
+    .push
+      .drawing
+        stroke: $push-color
+    .push
+      .filling
+        fill: $push-color
+  @if $feature == core
+    .core
+      .drawing
+        stroke: $core-color
+    .core
+      .filling
+        fill: $core-color
+  @if $feature == security
+    .security
+      .drawing
+        stroke: $security-color
+    .security
+      .filling
+        fill: $security-color
 
 /* =================== Standard elements ============================================================================
  */
@@ -382,11 +404,12 @@ div.section
     display: none
     @include respond-to(desktop)
       display: inline-block
-      margin: -40px
+      margin-left: -40px
+      margin-top: 20px
     color: $section-text-color
   &.core .sect2 h2
     color: $section-text-color
-    margin-top: -2px
+    margin-top: -40px
 
 @include color-with(core)
 
@@ -397,6 +420,15 @@ div.section
 .section-strip
   border-top-width: 4px
   border-top-style: solid
+
+/* =================== Contextual coloring of SVG images =====================================================================
+ */
+
+@include color-svg-with(core)
+
+@include color-svg-with(push)
+
+@include color-svg-with(security)
 
 /* =================== Code tabs =====================================================================
  */    

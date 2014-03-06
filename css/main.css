@@ -277,10 +277,11 @@ div.section {
     @media only screen and (min-width: 848px) {
       div.section.core .sect2 object {
         display: inline-block;
-        margin: -40px; } }
+        margin-left: -40px;
+        margin-top: 20px; } }
   div.section.core .sect2 h2 {
     color: #ebebeb;
-    margin-top: -2px; }
+    margin-top: -40px; }
 
 div.core a {
   color: #e17408;
@@ -323,6 +324,26 @@ div.security .section-strip {
 .section-strip {
   border-top-width: 4px;
   border-top-style: solid; }
+
+/* =================== Contextual coloring of SVG images =====================================================================
+ */
+.core .drawing {
+  stroke: #e17408; }
+
+.core .filling {
+  fill: #e17408; }
+
+.push .drawing {
+  stroke: #c652bb; }
+
+.push .filling {
+  fill: #c652bb; }
+
+.security .drawing {
+  stroke: #6cc319; }
+
+.security .filling {
+  fill: #6cc319; }
 
 /* =================== Code tabs =====================================================================
  */
